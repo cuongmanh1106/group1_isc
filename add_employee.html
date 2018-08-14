@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Material Admin by Bootstrapious.com</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Fontastic Custom icon font-->
+  <link rel="stylesheet" href="css/fontastic.css">
+  <!-- Google fonts - Poppins -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      </head>
+      <body>
+        <div class="page">
+          <!-- Main Navbar-->
+          <header class="header">
+            <nav class="navbar">
+              <!-- Search Box-->
+              <div class="search-box">
+                <button class="dismiss"><i class="icon-close"></i></button>
+                <form id="searchForm" action="#" role="search">
+                  <input type="search" placeholder="What are you looking for..." class="form-control">
+                </form>
+              </div>
+              <div class="container-fluid">
+                <div class="navbar-holder d-flex align-items-center justify-content-between">
+                  <!-- Navbar Header-->
+                  <div class="navbar-header">
+                    <!-- Navbar Brand --><a href="index.html" class="navbar-brand d-none d-sm-inline-block">
+                      <div class="brand-text d-none d-lg-inline-block"><span>Bootstrap </span><strong>Dashboard</strong></div>
+                      <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>BD</strong></div></a>
+                      <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+                    </div>
+                    <!-- Navbar Menu -->
+                    <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                      <!-- Search-->
+                      <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+                      <!-- Notifications-->
+                      <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red badge-corner">12</span></a>
+                        <ul aria-labelledby="notifications" class="dropdown-menu">
+                          <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                            <div class="notification">
+                              <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
+                              <div class="notification-time"><small>4 minutes ago</small></div>
+                            </div></a></li>
+                            <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                              <div class="notification">
+                                <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                <div class="notification-time"><small>4 minutes ago</small></div>
+                              </div></a></li>
+                              <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                <div class="notification">
+                                  <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
+                                  <div class="notification-time"><small>4 minutes ago</small></div>
+                                </div></a></li>
+                                <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                  <div class="notification">
+                                    <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                    <div class="notification-time"><small>10 minutes ago</small></div>
+                                  </div></a></li>
+                                  <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
+                                </ul>
+                              </li>
+                              <!-- Messages                        -->
+                              <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope-o"></i><span class="badge bg-orange badge-corner">10</span></a>
+                                <ul aria-labelledby="notifications" class="dropdown-menu">
+                                  <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                                    <div class="msg-profile"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                                    <div class="msg-body">
+                                      <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
+                                    </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                                      <div class="msg-profile"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                                      <div class="msg-body">
+                                        <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
+                                      </div></a></li>
+                                      <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                                        <div class="msg-profile"> <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                                        <div class="msg-body">
+                                          <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
+                                        </div></a></li>
+                                        <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>Read all messages   </strong></a></li>
+                                      </ul>
+                                    </li>
+                                    <!-- Languages dropdown    -->
+                                    <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
+                                      <ul aria-labelledby="languages" class="dropdown-menu">
+                                        <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English" class="mr-2">German</a></li>
+                                        <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2">French                                         </a></li>
+                                      </ul>
+                                    </li>
+                                    <!-- Logout    -->
+                                    <li class="nav-item"><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </nav>
+                          </header>
+                          <div class="page-content d-flex align-items-stretch"> 
+                            <!-- Side Navbar -->
+                            <nav class="side-navbar">
+                              <!-- Sidebar Header-->
+                              <div class="sidebar-header d-flex align-items-center">
+                                <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                                <div class="title">
+                                  <h1 class="h4">Mark Stephen</h1>
+                                  <p>Web Designer</p>
+                                </div>
+                              </div>
+                              <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+                              <<ul class="list-unstyled">
+                                <li><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+                                <li><a href="certification.html"> <i class="icon-grid"></i>Certification </a></li>
+                                <li><a href="country.html"> <i class="fa fa-bar-chart"></i>Country </a></li>
+                                <li><a href="hoso.html"> <i class="icon-padnote"></i>Submitted document </a></li>
+                                <li><a href="position.html"> <i class="icon-padnote"></i>Position </a></li>
+                                <li><a href="specialization.html"> <i class="icon-padnote"></i>Specialization </a></li>
+                                <li><a href="ethic.html"> <i class="icon-padnote"></i>Ethic </a></li>
+                                <li><a href="id_place.html"> <i class="icon-padnote"></i>ID issue place </a></li>
+                                <li><a href="province.html"> <i class="icon-padnote"></i>Province </a></li>
+                                <li class="active"><a href="employee.html"> <i class="icon-padnote"></i>Employee </a></li>
+
+
+
+                              </ul><span class="heading">Extras</span>
+                            </nav>
+                            <div class="content-inner">
+                              <!-- Page Header-->
+                              <header class="page-header">
+                                <div class="container-fluid">
+                                  <h2 class="no-margin-bottom">Imployee Imfomation</h2> 
+                                </div>
+                              </header>
+                              <!-- Dashboard Counts Section-->
+
+                              <div class="fluid-container">
+                                <br>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home">Personal imformation</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#certification">Certification</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#document">Submitted document</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#position">Position</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#special">Specialization </a>
+                                  </li>
+                                  
+
+                                </ul>
+                                <form>
+                                  <!-- Tab panes -->
+                                  <div class="tab-content">
+                                    <div id="home" class="fluid-container tab-pane active"><br>
+                                      <div class="col-md-12">
+                                        <div class="card">
+                                          <div class="card-header">
+                                            Persional imfomation
+                                          </div>
+                                          <div class="card-body">
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">ID</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Last name</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">First name</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Gender</label>
+                                              <div class="col-sm-9">
+                                                <input type="radio" name="gender" > male
+                                                <input type="radio" name="gender" > female
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Birthday</label>
+                                              <div class="col-sm-9">
+                                                <input type="date" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">ID number</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Email</label>
+                                              <div class="col-sm-9">
+                                                <input type="email" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Address</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Image</label>
+                                              <div class="col-sm-9">
+                                                <input type="file">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Degree</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Tiến Sĩ</option>
+                                                  <option value="">Thạc Sĩ</option>
+                                                  <option value="">Cử Nhân</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Ethic</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Kinh</option>
+                                                  <option value="">Tày</option>
+                                                  <option value="">Thái</option>
+                                                  <option value="">Mường</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">ID issue place</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">TP Hồ Chí Minh</option>
+                                                  <option value="">Hà Nội</option>
+                                                  <option value="">Hải Phòng</option>
+                                                  <option value="">Đà Nẵng</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Country</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Viet Nam</option>
+                                                  <option value="">Japan</option>
+                                                  <option value="">United States</option>
+                                                  <option value="">England</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 form-control-label">Province</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Nawasaki</option>
+                                                  <option value="">Hirosima</option>
+                                                  <option value="">Alabama</option>
+                                                  <option value="">Armed Forces America</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    <div id="certification" class="tab-pane fade"><br>
+                                     <div class="col-md-12">
+                                      <div class="card">
+                                        <div class="card-header">
+                                          Certification
+                                        </div>
+                                        <div class="card-body">
+                                          <a id="add_certification" href="javascript:void(0)" class="btn btn-info "><i class="fa fa-plus"></i> Add</a>
+                                          <hr>
+                                          <div class="add_certification">
+                                            <div class="form-group row">
+                                              <label class="col-sm-2 form-control-label">Certification</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Toiec</option>
+                                                  <option value="">Ielts</option>
+                                                  <option value="">IT certification</option>
+                                                </select>
+                                              </div>
+                                              <div class="col-sm-1"  style="line-height: 40px;">
+                                                <a class="close_certification" href="javascript:void(0)"><i class="fa fa-close"></i></a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                  <div id="document" class="fluid-container tab-pane fade"><br>
+                                    <div class="col-md-12">
+                                      <div class="card">
+                                        <div class="card-header">
+                                          Submitted document
+                                        </div>
+                                        <div class="card-body">
+                                          <a id="add_document" href="javascript:void(0)" class="btn btn-info "><i class="fa fa-plus"></i> Add</a>
+                                          <hr>
+                                          <div class="add_document">
+                                            <div class="form-group row">
+                                              <label class="col-sm-2 form-control-label">Submitted document</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">CMND</option>
+                                                  <option value="">Hộ khẩu</option>
+                                                  <option value="">Hình 3x4</option>
+                                                  <option value="">Bảng điểm</option>
+                                                </select>
+                                              </div>
+                                              <div class="col-sm-1"  style="line-height: 40px;">
+                                                <a class="close_document" href="javascript:void(0)"><i class="fa fa-close"></i></a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div id="position" class="fluid-container tab-pane fade"><br>
+                                    <div class="col-md-12">
+                                      <div class="card">
+                                        <div class="card-header">
+                                          Position
+                                        </div>
+                                        <div class="card-body">
+                                          <a id="add_position" href="javascript:void(0)" class="btn btn-info "><i class="fa fa-plus"></i> Add</a>
+                                          <hr>
+                                          <div class="add_position">
+                                            <div class="form-group row">
+                                              <label class="col-sm-2 form-control-label">Position</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Project manager</option>
+                                                  <option value="">Developer</option>
+                                                  <option value="">Director</option>
+                                                  <option value="">Cashier</option>
+                                                </select>
+                                              </div>
+                                              <div class="col-sm-1"  style="line-height: 40px;">
+                                                <a class="close_position" href="javascript:void(0)"><i class="fa fa-close"></i></a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div id="special" class="fluid-container tab-pane fade"><br>
+                                    <div class="col-md-12">
+                                      <div class="card">
+                                        <div class="card-header">
+                                          Specialization
+                                        </div>
+                                        <div class="card-body">
+                                          <a id="add_special" href="javascript:void(0)" class="btn btn-info "><i class="fa fa-plus"></i> Add</a>
+                                          <hr>
+                                          <div class="add_special">
+                                            <div class="form-group row">
+                                              <label class="col-sm-2 form-control-label">Specialization</label>
+                                              <div class="col-sm-9">
+                                                <select class="form-control">
+                                                  <option value="">Infomation Technology</option>
+                                                  <option value="">Teacher</option>
+                                                  <option value="">Marketing</option>
+                                                  <option value="">None</option>
+                                                </select>
+                                              </div>
+                                              <div class="col-sm-1"  style="line-height: 40px;">
+                                                <a class="close_special" href="javascript:void(0)"><i class="fa fa-close"></i></a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div style="text-align: center;color: #fff">
+                                <a class="btn btn-success"><i class="fa fa-thumbs-up"></i> Submit</a>
+                                <a href="employee.html" class="btn btn-danger"><i class="fa fa-reply"></i> Cancel</a>
+                              </div>
+                              
+                            </form>
+
+                            <footer class="main-footer">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <p>Your company &copy; 2017-2019</p>
+                                  </div>
+                                  <div class="col-sm-6 text-right">
+                                    <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                                    <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                                  </div>
+                                </div>
+                              </div>
+                            </footer>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- JavaScript files-->
+                      <script src="vendor/jquery/jquery.min.js"></script>
+                      <script src="vendor/popper.js/umd/popper.min.js"> </script>
+                      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                      <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+                      <script src="vendor/chart.js/Chart.min.js"></script>
+                      <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+                      <script src="js/charts-home.js"></script>
+                      <!-- Main File-->
+                      <script src="js/front.js"></script>
+                      <script type="text/javascript">
+                        $(document).on('click','#add_certification',function(){
+                          html = '';
+                          html += '<div class="form-group row">';
+                          html += ' <label class="col-sm-2 form-control-label">Certification</label>';
+                          html += ' <div class="col-sm-9">';
+                          html += '<select class="form-control">';
+                          html += '<option value="">Toiec</option>';
+                          html += '<option value="">Ielts</option>';
+                          html += '<option value="">IT certification</option>'
+                          html += '</select>';
+                          html += '</div>'
+                          html += '<div class="col-sm-1"  style="line-height: 40px;">'
+                          html += '<a class="close_certification"  href="javascript:void(0)"><i class="fa fa-close"></i></a>'
+                          html += '</div>'
+                          html += '</div>';
+                          $('.add_certification').append(html);
+
+                        })
+
+                        $(document).on('click','.close_certification',function(){
+                          $(this).parent().parent().remove();
+                        })
+
+                        $(document).on('click','#add_document',function(){
+                          html = '';
+                          html += '<div class="form-group row">';
+                          html += ' <label class="col-sm-2 form-control-label">Certification</label>';
+                          html += ' <div class="col-sm-9">';
+                          html += '<select class="form-control">';
+                          html += '<option value="">CMND</option>';
+                          html += '<option value="">Hộ khẩu</option>';
+                          html += '<option value="">Hình 3x4</option>';
+                          html += '<option value="">Bảng điểm</option>';
+                          html += '</select>';
+                          html += '</div>'
+                          html += '<div class="col-sm-1"  style="line-height: 40px;">'
+                          html += '<a class="close_document"  href="javascript:void(0)"><i class="fa fa-close"></i></a>'
+                          html += '</div>'
+                          html += '</div>';
+                          $('.add_document').append(html);
+
+                        })
+
+                        $(document).on('click','.close_document',function(){
+                          $(this).parent().parent().remove();
+                        })
+
+                        $(document).on('click','#add_position',function(){
+                          html = '';
+                          html += '<div class="form-group row">';
+                          html += ' <label class="col-sm-2 form-control-label">Certification</label>';
+                          html += ' <div class="col-sm-9">';
+                          html += '<select class="form-control">';
+                          html += '<option value="">Project manager</option>';
+                          html += '<option value="">Developer</option>';
+                          html += '<option value="">Director</option>';
+                          html += '<option value="">Cashier</option>';
+                          html += '</select>';
+                          html += '</div>'
+                          html += '<div class="col-sm-1"  style="line-height: 40px;">'
+                          html += '<a class="close_position"  href="javascript:void(0)"><i class="fa fa-close"></i></a>'
+                          html += '</div>'
+                          html += '</div>';
+                          $('.add_position').append(html);
+
+                        })
+
+                        $(document).on('click','.close_position',function(){
+                          $(this).parent().parent().remove();
+                        })
+
+                        $(document).on('click','#add_special',function(){
+                          html = '';
+                          html += '<div class="form-group row">';
+                          html += ' <label class="col-sm-2 form-control-label">Certification</label>';
+                          html += ' <div class="col-sm-9">';
+                          html += '<select class="form-control">';
+                          html += '<option value="">Infomation Technology </option>';
+                          html += '<option value="">Teacher</option>';
+                          html += '<option value="">Marketing</option>';
+                          html += '<option value="">None</option>';
+                          html += '</select>';
+                          html += '</div>'
+                          html += '<div class="col-sm-1"  style="line-height: 40px;">'
+                          html += '<a class="close_special"  href="javascript:void(0)"><i class="fa fa-close"></i></a>'
+                          html += '</div>'
+                          html += '</div>';
+                          $('.add_special').append(html);
+
+                        })
+
+                        $(document).on('click','.close_special',function(){
+                          $(this).parent().parent().remove();
+                        })
+
+                      </script>
+                    </body>
+                    </html>
